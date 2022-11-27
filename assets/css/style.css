@@ -1,0 +1,259 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	background: none;
+	border: none;
+	outline: none;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	object-fit: cover;
+}
+
+button {
+	color: white;
+}
+
+a {
+	color: white;
+}
+
+img {
+	width: 100%;
+}
+
+html, body {
+	color: white;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	background-color: rgba(23, 25, 39, 1);
+}
+
+/* end of reset */
+
+/* navbar */
+.navbar {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	display: flex;
+	padding: .8em 0;
+	transition: .3s;
+	align-items: center;
+	justify-content: space-around;
+	background-color: transparent;
+}
+
+.navbar .open-nav {
+	width: 50px;
+	row-gap: 6px;
+	display: grid;
+}
+
+.navbar .open-nav .item {
+	width: 100%;
+	height: 5px;
+	background-color: rgba(18, 140, 216, 1);
+}
+
+.navbar .open-nav:active .item{
+	transform: scale(.8);
+}
+
+.navbar .navlist {
+	width: 45vw;
+	display: grid;
+	right: -1000px;
+	justify-items: center;
+	align-content: space-between;
+	position: absolute;
+	height: 65vh;
+	padding: 1em 0;
+	transition: .4s;
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 0 0 .50em .50em;
+}
+/* end of navbar */
+
+.container {
+	display: grid;
+	row-gap: 300px;
+}
+
+/* header */
+header {
+	display: flex;
+	justify-items: start;
+	align-items: flex-end;
+	height: 55vh;
+	padding: 1em 0;
+	background-image: url("../image/header.jpeg");
+}
+
+header .main-text {
+	display: grid;
+	row-gap: 15px;
+	padding: 1em 2em;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+header .main-text button {
+	justify-self: start;
+	border: 2px solid rgba(46, 151, 197, 1);
+}
+/* end of header */
+
+/* about jp */
+.about-jp {
+	padding: 4.5em 0 1em 0;
+	display: grid;
+	row-gap: 6em;
+	border-bottom: 3px solid rgba(157, 210, 255, 1);
+}
+
+.about-jp h3 {
+	justify-self: center;
+}
+
+.about-jp img {
+	width: 70%;
+	justify-self: center;
+	border-radius: .50em;
+}
+
+.about-jp .content {
+	display: grid;
+	row-gap: 1.5em;
+	padding: 0 1em 0;
+	text-align: center;
+}
+
+.about-jp .content p {
+	padding: 0 2em;
+}
+/* end of about jp */
+
+/* jp culture */
+.jp-culture {
+	display: grid;
+	padding: 4.5em 0 0 0;
+	row-gap: 6em;
+	justify-items: center;
+}
+
+.jp-culture img {
+	object-fit: cover;
+}
+
+.jp-culture .main-contents {
+	display: grid;
+	row-gap: 100px;
+	padding: 0 1em 0;
+}
+
+.jp-culture .main-contents .content {
+	display: grid;
+	row-gap: 20px;
+}
+/* end of jp culture */
+
+/* jp city */
+.jp-city {
+	padding: 4.5em 0 0 0;
+	display: grid;
+	row-gap: 6em;
+	justify-items: center;
+}
+
+.jp-city img {
+	height: 450px;
+}
+
+.jp-city .tokyo {
+	margin-bottom: 10vh;
+	border-bottom: 2.5px solid rgba(179, 224, 255, 1);
+	padding: 0 1.5em 1em;
+}
+
+.jp-city .content {
+	display: grid;
+	row-gap: 20px;
+}
+
+.jp-city .sub-city {
+	padding: 0 1.5em 0;
+	display: grid;
+	row-gap: 30px;
+}
+/* end of jp city */
+
+/* jp culinary */
+.jp-culinary {
+	display: grid;
+	row-gap: 6em;
+	justify-items: center;
+	padding: 4.5em 0 0 0;
+}
+
+.jp-culinary img {
+	height: 350px;
+}
+
+.jp-culinary .main-contents {
+	display: grid;
+	row-gap: 3em;
+	padding: 0 2em 0;
+}
+
+.jp-culinary .main-contents .content {
+	display: grid;
+	row-gap: 20px;
+	padding: 2em 1.5em;
+	border-radius: .35em;
+	background-color: rgba(34, 58, 75, 1);
+}
+
+.jp-culinary .showMore {
+	border: 2.5px solid rgba(72, 157, 255, 1);
+}
+
+.jp-culinary .showMore:hover {
+	color: black;
+	text-shadow: 0 0 20px rgba(206, 229, 255, 1);
+	background-color: rgba(10, 91, 184, 1);
+}
+/* end of jp culinary */
+
+/* footer */
+footer {
+	display: grid;
+	row-gap: 20px;
+	padding: 2em;
+	grid-template-columns: 1fr 1fr;
+	background: linear-gradient(to bottom right,
+		rgba(5, 55, 129, .4),
+		rgba(5, 55, 129, 0.77)
+	);
+}
+
+footer .main-content {
+	display: grid;
+	row-gap: 5px;
+}
+
+footer .media {
+	display: grid;
+	row-gap: 10px;
+}
+
+footer ul {
+	max-width: 50%;
+	display: flex;
+	justify-content: space-around;
+}
+/* end of footer */

@@ -1,0 +1,32 @@
+.upperC {
+	text-transform: uppercase;
+}
+
+.capital {
+	text-transform: capitalize;
+}
+
+.btn {
+	padding: .3em 1em .33em;
+	border-radius: .45em;
+}
+
+.btn-close {
+	border-radius: .45em;
+	transition: .3s;
+	padding: .3em 1em .33em;
+	background-color: rgba(151, 16, 16, 1);
+}
+
+.btn-close:hover {
+	background-color: rgba(191, 16, 16, 1);
+	box-shadow: 0 0 20px rgba(255, 78, 120, 0.21);
+}
+
+.bg-dark {
+	background-color: rgba(23, 35, 49, 1);
+}
+
+.transition-3 {
+	transition: .3s;
+}
