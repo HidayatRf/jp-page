@@ -1,0 +1,165 @@
+@media (min-width: 600px) {
+	.about-jp {
+		padding-right: 4em;
+		padding-left: 4em;
+	}
+
+	.jp-culture .main-contents {
+		padding-left: 3em;
+		padding-right: 3em;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+
+	.jp-city .tokyo {
+		padding: 0 1em;
+	}
+
+	.jp-city .sub-city {
+		padding: 0 4em;
+	}
+
+	.jp-culinary {
+		padding: 4.5em 3em 0;
+
+	}
+}
+
+@media (min-width: 850px) {
+
+	.navbar .open-nav,
+	.navbar .close-nav {
+		display: none;
+	}
+
+	.navbar .navlist {
+		width: 60%;
+		right: 0;
+		position: static;
+		display: flex;
+		height: 100%;
+		padding: 0;
+		justify-content: space-around;
+		align-content: center;
+		background-color: transparent;
+	}
+
+	.about-jp .content {
+		grid-template-areas:
+			"img h3"
+			"img info";
+		align-items: center;
+		justify-items: center;
+		column-gap: 20px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.about-jp .content:nth-child(even) {
+		grid-template-areas:
+			"h3 img"
+			"info img";
+	}
+
+	.about-jp img {
+		grid-area: img;
+	}
+
+	.about-jp .info {
+		grid-area: info;
+	}
+
+	.about-jp .content h3 {
+		grid-area: h3;
+	}
+}
+
+
+@media (min-width: 1024px) {
+	#home {
+		display: flex;
+		justify-content: center;
+	}
+
+	.container {
+		max-width: 95%;
+	}
+
+	header {
+		align-items: stretch;
+		height: 55vh;
+	}
+
+	header .main-text {
+		width: 45vw;
+		padding: 2em 1em;
+		align-items: center;
+	}
+
+	header .main-text .content {
+		row-gap: 20px;
+	}
+
+	.jp-culture {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	.jp-culture .main-contents .content {
+		grid-template-areas:
+			"img info"
+			"img info";
+		align-items: center;
+		column-gap: 20px;
+	}
+
+	.jp-culture .main-contents .content:nth-child(even) {
+		grid-template-areas:
+			"info img"
+			"info img";
+		column-gap: 20px;
+	}
+
+	.jp-culture .main-contents .content:nth-child(even) h4,
+	.jp-culture .main-contents .content:nth-child(even) p {
+		text-align: end;
+	}
+
+	.jp-culture img {
+		grid-area: img;
+	}
+
+	.jp-culture .info {
+		grid-area: info;
+	}
+
+	.jp-city .tokyo {
+		padding-left: 3em;
+		padding-right: 3em;
+		padding-bottom: 3em;
+		grid-template-areas:
+			"img info"
+			"img info";
+		align-items: center;
+		column-gap: 30px;
+	}
+
+	.jp-city .tokyo img {
+		grid-area: img;
+	}
+
+	.jp-city .tokyo .info {
+		grid-area: info;
+	}
+
+	.jp-city .sub-city {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 25px;
+	}
+
+	.jp-culinary .main-contents {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+		row-gap: 50px;
+	}
+}

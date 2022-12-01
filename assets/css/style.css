@@ -26,8 +26,10 @@ img {
 	width: 100%;
 }
 
-html, body {
+html,
+body {
 	color: white;
+	font-size: 16px;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 	background-color: rgba(23, 25, 39, 1);
@@ -61,7 +63,7 @@ html, body {
 	background-color: rgba(18, 140, 216, 1);
 }
 
-.navbar .open-nav:active .item{
+.navbar .open-nav:active .item {
 	transform: scale(.8);
 }
 
@@ -78,6 +80,7 @@ html, body {
 	background-color: rgba(0, 0, 0, .2);
 	border-radius: 0 0 .50em .50em;
 }
+
 /* end of navbar */
 
 .container {
@@ -91,7 +94,6 @@ header {
 	justify-items: start;
 	align-items: flex-end;
 	height: 55vh;
-	padding: 1em 0;
 	background-image: url("../image/header.jpeg");
 }
 
@@ -102,15 +104,21 @@ header .main-text {
 	background-color: rgba(0, 0, 0, .6);
 }
 
+header .main-text .content {
+	display: grid;
+	row-gap: 15px;
+}
+
 header .main-text button {
 	justify-self: start;
 	border: 2px solid rgba(46, 151, 197, 1);
 }
+
 /* end of header */
 
 /* about jp */
 .about-jp {
-	padding: 4.5em 0 1em 0;
+	padding: 4.5em 1em 1em;
 	display: grid;
 	row-gap: 6em;
 	border-bottom: 3px solid rgba(157, 210, 255, 1);
@@ -121,7 +129,6 @@ header .main-text button {
 }
 
 .about-jp img {
-	width: 70%;
 	justify-self: center;
 	border-radius: .50em;
 }
@@ -130,12 +137,14 @@ header .main-text button {
 	display: grid;
 	row-gap: 1.5em;
 	padding: 0 1em 0;
-	text-align: center;
+	text-align: start;
 }
 
-.about-jp .content p {
-	padding: 0 2em;
+.about-jp .info {
+	display: grid;
+	row-gap: 10px;
 }
+
 /* end of about jp */
 
 /* jp culture */
@@ -146,20 +155,25 @@ header .main-text button {
 	justify-items: center;
 }
 
-.jp-culture img {
-	object-fit: cover;
-}
-
 .jp-culture .main-contents {
 	display: grid;
 	row-gap: 100px;
-	padding: 0 1em 0;
+	padding: 1em 1.5em;
+	box-shadow: 0 0 40px rgba(78, 171, 241, 0.1),
+		0 0 10px rgba(48, 181, 241, 0.1) inset;
+	background-color: rgba(15, 31, 40, 1);
 }
 
 .jp-culture .main-contents .content {
 	display: grid;
 	row-gap: 20px;
 }
+
+.jp-culture .info {
+	display: grid;
+	row-gap: 10px;
+}
+
 /* end of jp culture */
 
 /* jp city */
@@ -177,7 +191,12 @@ header .main-text button {
 .jp-city .tokyo {
 	margin-bottom: 10vh;
 	border-bottom: 2.5px solid rgba(179, 224, 255, 1);
-	padding: 0 1.5em 1em;
+	padding: 0 1.5em 2em;
+}
+
+.jp-city .tokyo .info {
+	display: grid;
+	row-gap: 10px;
 }
 
 .jp-city .content {
@@ -188,8 +207,9 @@ header .main-text button {
 .jp-city .sub-city {
 	padding: 0 1.5em 0;
 	display: grid;
-	row-gap: 30px;
+	row-gap: 70px;
 }
+
 /* end of jp city */
 
 /* jp culinary */
@@ -207,15 +227,20 @@ header .main-text button {
 .jp-culinary .main-contents {
 	display: grid;
 	row-gap: 3em;
-	padding: 0 2em 0;
+	padding: 0 1.5em 0;
 }
 
 .jp-culinary .main-contents .content {
 	display: grid;
 	row-gap: 20px;
-	padding: 2em 1.5em;
+	padding: 1.5em 1em;
 	border-radius: .35em;
 	background-color: rgba(34, 58, 75, 1);
+}
+
+.jp-culinary .info {
+	display: grid;
+	row-gap: 10px;
 }
 
 .jp-culinary .showMore {
@@ -227,6 +252,7 @@ header .main-text button {
 	text-shadow: 0 0 20px rgba(206, 229, 255, 1);
 	background-color: rgba(10, 91, 184, 1);
 }
+
 /* end of jp culinary */
 
 /* footer */
@@ -236,9 +262,9 @@ footer {
 	padding: 2em;
 	grid-template-columns: 1fr 1fr;
 	background: linear-gradient(to bottom right,
-		rgba(5, 55, 129, .4),
-		rgba(5, 55, 129, 0.77)
-	);
+			rgba(5, 55, 129, .4),
+			rgba(5, 55, 129, 0.77));
+	justify-items: center;
 }
 
 footer .main-content {
@@ -248,12 +274,12 @@ footer .main-content {
 
 footer .media {
 	display: grid;
-	row-gap: 10px;
+	row-gap: 5px;
 }
 
 footer ul {
-	max-width: 50%;
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
+
 /* end of footer */
